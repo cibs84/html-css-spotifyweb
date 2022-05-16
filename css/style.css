@@ -1,0 +1,54 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* COMMON */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* UTILITIES */
+
+.app-wrapper {
+
+}
+
+.flex-container {
+
+}
+
+
+/* MAIN */
+
+
+/* MAIN > Navigation Menu*/
+
+
+/* MAIN > Main Content*/
+
+
+/* MAIN > Upgrade Bar*/
+
+
+
+/* FOOTER */
