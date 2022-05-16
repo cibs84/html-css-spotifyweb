@@ -30,25 +30,59 @@ ul {
 /* UTILITIES */
 
 .app-wrapper {
-
+    width: 100%;
+    height: calc(100vh - 100px);
 }
 
 .flex-container {
-
+    display: flex;
 }
 
 
 /* MAIN */
-
+main {
+    height: 100%;
+    width: 100%;
+}
 
 /* MAIN > Navigation Menu*/
+nav {
+    width: 250px;
+    overflow-y: hidden;
 
+    /* TEST */
+    background-color: lightblue;
+}
 
 /* MAIN > Main Content*/
+#main-content {
+    width: calc(100% - 250px);
+    height: 100%;
+    overflow-y: auto;
+    padding: 110px 10px 10px;
 
+    /* TEST */
+    background-color: lightcoral;
+}
 
 /* MAIN > Upgrade Bar*/
+#upgrade-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 250px);
+    height: 100px;
+    overflow-y: hidden;
 
+    /* TEST */
+    background-color: rgba(144, 238, 144, 0.4);
+}
 
 
 /* FOOTER */
+footer {
+    background-color: orange;
+    height: 100px;
+    overflow-y: hidden;
+
+}
