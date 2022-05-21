@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <!-- Link - Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link - Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link - style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- App Wrapper -->
+    <div class="app-wrapper">
+
+        <!-- MAIN -->
+        <main class="flex-container">
+
+            <!-- Navigation Menu -->
+            <nav id="navigation-menu" class="flex-container">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Logo Spotify">
+                </div>
+
+                <!-- Menu -->
+                <ul class="main-menu">
+
+                    <!-- Item -->
+                    <li class="current">
+                        <a href="#">
+                            <img src="img/home.svg" alt="Home icon">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">
+                            <img src="img/search.svg" alt="Search icon">
+                            Cerca
+                        </a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="Library icon">
+                            La tua libreria
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Playlist -->
+                <h2>PLAYLIST</h2>
+
+                <ul class="playlist-menu">
+                    <li class="create-item">
+                        <a href="#">
+                            <span>+</span>
+                            Crea Playlist
+                        </a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">Nome Playlist</a>
+                    </li>
+                </ul>
+
+                <!-- User Area -->
+                <div class="user-area">
+
+                    <!-- Install App -->
+                    <a class="install-app" href="#">
+                        <img src="img/download.svg" alt="Download icon">
+                        Installa app
+                    </a>
+
+                    <hr>
+
+                    <!-- User Profile -->
+                    <a class="user-profile" href="#">
+                        <span>
+                            <img src="img/profile.svg" alt="Profile Icon">
+                        </span>
+                        John Doe
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Main Menu: Mobile XS (max-width: 600px) -->
+            <nav id="navigation-menu-xs" class="mobile-xs flex-container">
+
+                <!-- Menu -->
+                <ul>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">
+                            <img src="img/logo-small.svg" alt="Logo small Spotify">
+                        </a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">
+                            <img src="img/home.svg" alt="Home icon">
+                        </a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">
+                            <img src="img/search.svg" alt="Search icon">
+                        </a>
+                    </li>
+
+                    <!-- Item -->
+                    <li>
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="Library icon">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- User Area -->
+                <div class="user-area">
+
+                    <!-- Install App -->
+                    <a class="install-app" href="#">
+                        <img src="img/download.svg" alt="Download icon">
+                    </a>
+
+                    <!-- User Profile -->
+                    <a class="user-profile" href="#">
+                        <span>
+                            <img src="img/profile.svg" alt="Profile Icon">
+                        </span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div id="main-content">
+
+                <!-- Menu -->
+                <nav>
+                    <ul class="flex-container">
+                        <li><a class="current" href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section - Recents -->
+                <section>
+                    <h2>Recently played</h2>
+
+                    <!-- All Items -->
+                    <div class="columns flex-container">
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                    <img src="img/metal_lifting.jpg" alt="Metal lifting">
+
+                                    <!-- Overlay -->
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle fa-4x"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Text -->
+                                <h3>Heavy Metal</h3>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                    <img src="img/stranger.jpeg" alt="Strangers Things">
+
+                                    <!-- Overlay -->
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle fa-4x"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Text -->
+                                <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                <div class="subtitle">Kyle Dixon & Micheal Stein</div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                    <img src="img/aquietplace.jpeg" alt="A quiet place">
+
+                                    <!-- Overlay -->
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle fa-4x"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Text -->
+                                <h3>A quiet place</h3>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                    <img src="img/split.jpeg" alt="Split">
+
+                                    <!-- Overlay -->
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle fa-4x"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Text -->
+                                <h3>Split</h3>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                    <img src="img/cure.jpeg" alt="A cure for wellness">
+
+                                    <!-- Overlay -->
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle fa-4x"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Text -->
+                                <h3>A cure for wellness</h3>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                    <img src="img/sinister.jpeg" alt="Sinister">
+
+                                    <!-- Overlay -->
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle fa-4x"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Text -->
+                                <h3>Sinister</h3>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section - Created for -->
+                <section>
+                    <h2>Creato per John Doe</h2>
+
+                    <div class="subtitle">Più ascolti, più saranno accurati i suggerimenti.</div>
+
+                    <!-- All Items -->
+                    <div class="columns flex-container">
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                    <img src="img/radar.jpeg" alt="Release Radar cover">
+
+                                    <!-- Overlay -->
+                                    <div class="overlay">
+                                        <i class="far fa-play-circle fa-4x"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Text -->
+                                <h3>Release Radar</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                <img src="img/mixdaily.jpeg" alt="Daily Mix cover">
+
+                                <!-- Overlay -->
+                                <div class="overlay">
+                                    <i class="far fa-play-circle fa-4x"></i>
+                                </div>
+                            </div>
+
+                            <!-- Text -->
+                                <h3>Daily Mix</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section - Most popular artists -->
+                <section>
+                    <h2>Artisti più popolari</h2>
+
+                    <div class="subtitle">Più ascolti, più saranno accurati i suggerimenti.</div>
+
+                    <!-- All Items -->
+                    <div class="columns flex-container">
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                <img src="img/youg.jpeg" alt="Lana Del Rey">
+
+                                <!-- Overlay -->
+                                <div class="overlay">
+                                    <i class="far fa-play-circle fa-4x"></i>
+                                </div>
+                            </div>
+
+                            <!-- Text -->
+                                <h3>Lana Del Rey</h3>
+                            </div>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="col">
+                            <div class="card">
+
+                                <!-- Image with Overlay -->
+                                <div class="container-img">
+
+                                    <!-- Image -->
+                                <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+
+                                <!-- Overlay -->
+                                <div class="overlay">
+                                    <i class="far fa-play-circle fa-4x"></i>
+                                </div>
+                            </div>
+
+                            <!-- Text -->
+                                <h3>Ludovico Einaudi</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Upgrade Bar -->
+            <div id="upgrade-bar" class="flex-container">
+                <a href="#" class="btn">EFFETTUA L'UPGRADE</a>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="flex-container">
+
+            <!-- Footer Left -->
+            <div class="footer-side info-track flex-container">
+
+                <!-- Info Track -->
+                <img src="img/sinister.jpeg" alt="Sinister album">
+
+                <div class="text">
+                    <h4>Sinister</h4>
+                    <a href="#">Brano Nome</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+
+            <!-- Footer Center -->
+            <div class="footer-player flex-container">
+
+                <!-- Controllers -->
+                <div class="controllers">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="far fa-play-circle fa-2x"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+
+                <!-- Bar Track -->
+                <div class="bar-track flex-container">
+                    <span>0:25</span>
+
+                    <div class="bar empty">
+                        <div class="bar full"></div>
+                    </div>
+
+                    <span>4:35</span>
+                </div>
+            </div>
+
+            <!-- Footer Right -->
+            <div class="footer-side volume-ctrl flex-container">
+
+                <!-- Icons -->
+                <div class="icons">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+
+                <!-- Bar Volume -->
+                <div class="bar empty">
+                    <div class="bar full"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

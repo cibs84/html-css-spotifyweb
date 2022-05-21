@@ -32,9 +32,10 @@ ul {
 /* UTILITIES */
 
 .app-wrapper {
-    width: 100%;
     height: 100vh;
-    min-width: 580px;
+
+    /* Bonus per responsive Huawei Mate 10 Pro (vedi in fondo) min-width: 360px - Regular min-width: 580px */
+    min-width: 360px;
 }
 
 .flex-container {
@@ -681,4 +682,73 @@ footer .footer-side .text a {
 footer .footer-side .bar.empty {
     width: 5rem;
 }
+}
+
+/* BONUS PER RESPONSIVE MOBILE HUAWEI MATE 10 PRO */
+
+/******* MOBILE - HUAWEI MATE 10 PRO *******/
+@media screen and (max-width: 580px) {
+/* MAIN > Main Content */
+#main-content nav ul li {
+    margin-bottom: 0.5rem;
+}    
+
+#main-content nav ul li a {
+    margin: 0 0.4rem;
+}
+
+/* FOOTER */
+footer .footer-side img {
+    display: none;
+}
+
+footer .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+footer .footer-side .icons i {
+    margin: 0 0 0.5rem;
+}
+
+footer .footer-side .icons i:last-child {
+    margin: 0;
+}
+
+footer .footer-side {
+    width: 5rem;
+}
+
+footer .footer-player {
+    padding: 0 1rem;
+}
+
+footer .footer-player .controllers i.fa-play-circle {
+    margin: 0;
+}
+
+footer .footer-player .controllers i {
+    margin: 0 0.3rem;
+}
+
+footer .footer-side .text a {
+    display: inline-block;
+    line-height: 0.7rem;
+    width: 4rem;
+}
+}
+
+@media screen and (max-height: 650px) and (min-width: 601px) {
+#navigation-menu ul.playlist-menu {
+    flex-grow: 0;
+    overflow-y: unset;
+}
+
+#navigation-menu, 
+#navigation-menu-xs {
+    overflow-y: auto;
+}
+
 }
