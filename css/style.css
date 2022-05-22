@@ -294,14 +294,6 @@ nav .user-area a.user-profile span {
     opacity: 1;
 }
 
-#main-content section:last-child .columns .col .card .container-img .overlay { 
-    border-radius: 50%;
-}
-
-#main-content section:last-child img { 
-    border-radius: 50%;
-}
-
 #main-content section .columns .col .card h3 { 
     font-size: 1rem;
     margin: 1rem 0 0.5rem;
@@ -692,9 +684,9 @@ footer .footer-side .bar.empty {
 }
 }
 
-/* BREAKPOINT PER BONUS RESPONSIVE MOBILE HUAWEI MATE 10 PRO */
+/* BONUS PER RESPONSIVE MOBILE HUAWEI MATE 10 PRO */
 
-/******* MOBILE - HUAWEI MATE 10 PRO (Portrait) *******/
+/******* MOBILE Portrait - HUAWEI MATE 10 PRO *******/
 @media screen and (max-width: 580px) {
 /* MAIN > Main Content */
 #main-content nav ul li {
@@ -721,8 +713,7 @@ footer .footer-side .icons i {
     margin: 0 0 0.5rem;
 }
 
-footer .footer-side .icons i.fa-desktop {
-    order: 1;
+footer .footer-side .icons i:last-child {
     margin: 0;
 }
 
@@ -749,8 +740,25 @@ footer .footer-side .text a {
 }
 }
 
-/******* MOBILE - HUAWEI MATE 10 PRO (Landscape) *******/
+/******* MOBILE Landscape - HUAWEI MATE 10 PRO *******/
 @media screen and (max-height: 650px) and (min-width: 601px) {
+
+/* MAIN */
+
+main {
+    height: calc(100vh - 60px);
+}
+
+/* MAIN > Main Content */
+#main-content nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+#main-content section h2 {
+    margin-top: 1rem;
+}
+
+/* MAIN > Navigation Menu */
 #navigation-menu ul.playlist-menu {
     flex-grow: 0;
     overflow-y: unset;
@@ -761,7 +769,10 @@ footer .footer-side .text a {
     overflow-y: auto;
 }
 
-#main-content section .columns .col {
-    width: calc(100% / 4);
+/* FOOTER */
+footer {
+    height: 60px;
 }
+
+
 }
